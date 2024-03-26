@@ -1,0 +1,78 @@
+
+
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+header{
+  width: 100%; 
+  height: 140px;
+  box-sizing: border-box;
+  background-color:white;
+  position: fixed;
+  
+}
+
+.pro{
+  width: 70%;
+  height: 73px;
+  border-width: 0px 0px 3px 0px;
+  border-color: blue;
+  border-style: solid;
+  box-sizing: border-box;
+  
+}
+
+button{
+  width:47%;
+  height: 40px;
+  background-color: black;
+  margin-top: 10px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+#vid{
+  background-color: blue;
+}
+
+div{
+  height: 528px;
+  width: 96%;
+  margin-left: 2%;
+  
+}
+
+
+#fv{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-color: black;
+  border-style:solid;
+  margin-top: 150px;
+  border-radius: 20px;
+  float: left;
+}
+
+.myVideo{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-width: 3px;
+  border-color: black;
+  border-style:solid;
+  margin-top: 10px;
+  border-radius: 20px;
+  float: left;
+}
+
+#img:hover{
+  background-color: blue;
+  transition: 2s;
+}
