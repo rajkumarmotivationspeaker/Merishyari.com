@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Myshayari.com
+    </title>
+   <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body> 
+    
+    <header>
+
+<center>
+     <img class="pro" src="profile.png"/>
+</center>     
+
+<center>
+<a href="Index.html"><button id="img">Image</button></a>
+<a href="Video.html"><button id="vid">Video</button></a>
+</center>       
+
+
+    </header>
+    
+    
+<section>
+
+
+<div class="video-container">
+  <video class="myVideo"id="fv" controls loop="loop" autoplay="autoplay">
+    <source src="v1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="video-container">
+  <video class="myVideo" controls loop="loop" autoplay="autoplay">
+    <source src="v1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
+
+</section>
+
+
+
+<script>
+  
+// Get all video elements
+const videos = document.querySelectorAll(".myVideo");
+
+// Options for the IntersectionObserver
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5 // Play video when 50% of the video is in the viewport
+};
+
+// Callback function for the IntersectionObserver
+const callback = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.play(); // Play video when it's in the viewport
+    } else {
+      entry.target.pause(); // Pause video when it's not in the viewport
+    }
+  });
+};
+
+// Create the IntersectionObserver
+const observer = new IntersectionObserver(callback, options);
+
+// Start observing each video element
+videos.forEach(video => {
+  observer.observe(video);
+});
+
+</script>
+</body>
+</html>
