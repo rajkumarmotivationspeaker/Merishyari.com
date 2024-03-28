@@ -78,3 +78,22 @@ box{
   background-color: blue;
   transition: 2s;
 }
+
+nav{
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  float: left;
+  background-color:#8508FF;
+  margin-top: 23px;
+  margin-bottom:10px ;
+  border-radius: 0px 40px 40px 0px ;
+  border-width: 3px 3px 3px 0px;
+  border-style: solid;
+  border-color:yellow;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 8px;
+ font-size: 15px;
+}
