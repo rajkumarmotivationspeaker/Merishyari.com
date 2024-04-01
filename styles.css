@@ -45,7 +45,7 @@ button{
   background-color: yellow;
   float: left;
   box-sizing: border-box;
-  margin-top: 145px;
+  margin-top: 20px;
   border-radius:20px ;
   border-width: 2px;
   border-color: black;
@@ -97,3 +97,32 @@ nav{
   padding-top: 8px;
  font-size: 15px;
 }
+
+
+
+fieldset{
+  float: left;
+  width: 98%;
+  height: 90px;
+  margin-top: 150px;
+  box-sizing: border-box;
+  margin-left: 1%;
+  border-radius: 10px;
+}
+
+legend{
+  color:green;
+  font-weight: bold;
+}
+
+#app{
+  width: 55px;
+  height:100% ;
+  float: left;
+  border-width:1px ;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: black;
+}
+
