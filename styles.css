@@ -47,7 +47,7 @@ button{
   float: left;
   box-sizing: border-box;
   margin-top: 20px;
-  border-radius:20px ;
+  border-radius: 5px ;
   border-width: 2px;
   border-color: black;
   border-style: solid;
